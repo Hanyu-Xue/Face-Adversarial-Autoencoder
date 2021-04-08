@@ -2,11 +2,24 @@
 This is the repo installing the face adversarial autoencoder. Most of the experiments run on the Colab. This repo contains:
 - Introduction
 - Codes supply
-- Results
 
 ## Introduction
 
+This method add adversary perturbations on latent space in a forward propogation way to reduce computation comsumimg and enhance AEs transferbility.
+
+<p align="center">
+<img src="/Data/System_model.png" width="800px"/>
+</p>
+
 ### Encoder setup
+
+The source of the Encoder is [here](https://github.com/eladrich/pixel2style2pixel). 
+
+The Decoder in this paper is [StyleGAN2](https://github.com/NVlabs/stylegan2).
+
+<p align="center">
+<img src="Data/Encoder_examples.png" width="800px"/>
+</p>
 
 #### Prerequisites
 - Linux or macOS
@@ -53,4 +66,10 @@ In addition, we provide various auxiliary models needed for training your own pS
 
 By default, we assume that all auxiliary models are downloaded and saved to the directory `pretrained_models`. However, you may use your own paths by changing the necessary values in `configs/path_configs.py`. 
 
+## Results
 
+<p align="center">
+<img src="Data/Example.png" width="800px"/>
+<img src="Data/identity.png" width="800px"/>
+<img src="Data/image_exp1.png" width="800px"/>
+</p>

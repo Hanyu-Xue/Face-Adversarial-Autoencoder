@@ -1,17 +1,19 @@
 # Face-Adversarial-Autoencoder
-This is the repo installing the face adversarial autoencoder. This repo contains:
+This is the repo installing the face adversarial autoencoder. Most of the experiments run on the Colab. This repo contains:
 - Introduction
 - Codes supply
 - Results
 
 ## Introduction
 
-### Prerequisites
+### Encoder setup
+
+#### Prerequisites
 - Linux or macOS
 - NVIDIA GPU + CUDA CuDNN (CPU may be possible with some modifications, but is not inherently supported)
 - Python 2 or 3
 
-### Installation
+#### Installation
 - Clone this repo:
 ``` 
 git clone https://github.com/eladrich/pixel2style2pixel.git
@@ -19,15 +21,16 @@ cd pixel2style2pixel
 ```
 - Dependencies:  
 We recommend running this repository using [Anaconda](https://docs.anaconda.com/anaconda/install/). 
-All dependencies for defining the environment are provided in `environment/psp_env.yaml`.
+All dependencies for defining the environment are provided in `environment/psp_env.yaml`. 
+Not suggested to use `conda` to install all dependencies in this repo. Use `pip` instead to avoid dependency errors.
 
-### Inference Notebook
+#### Inference Notebook
 To help visualize the pSp framework on multiple tasks and to help you get started, we provide a Jupyter notebook found in `notebooks/inference_playground.ipynb` that allows one to visualize the various applications of pSp.   
 The notebook will download the necessary pretrained models and run inference on the images found in `notebooks/images`.  
 For the tasks of conditional image synthesis and super resolution, the notebook also demonstrates pSp's ability to perform multi-modal synthesis using 
 style-mixing. 
 
-### Pretrained Models
+#### Pretrained Models
 Please download the pre-trained models from the following links. Each pSp model contains the entire pSp architecture, including the encoder and decoder weights.
 | Path | Description
 | :--- | :----------

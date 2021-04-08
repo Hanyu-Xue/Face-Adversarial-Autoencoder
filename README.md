@@ -11,7 +11,7 @@ This method add adversary perturbations on latent space in a forward propogation
 <img src="/Data/System_model.png" width="800px"/>
 </p>
 
-### Encoder setup
+### Setup
 
 The source of the Encoder is [here](https://github.com/eladrich/pixel2style2pixel). 
 
@@ -65,6 +65,16 @@ In addition, we provide various auxiliary models needed for training your own pS
 |[MTCNN](https://drive.google.com/file/d/1tJ7ih-wbCO6zc3JhI_1ZGjmwXKKaPlja/view?usp=sharing)  | Weights for MTCNN model taken from [TreB1eN](https://github.com/TreB1eN/InsightFace_Pytorch) for use in ID similarity metric computation. (Unpack the tar.gz to extract the 3 model weights.)
 
 By default, we assume that all auxiliary models are downloaded and saved to the directory `pretrained_models`. However, you may use your own paths by changing the necessary values in `configs/path_configs.py`. 
+
+### Data set
+
+This repo uses a subset of [FFHQ](https://drive.google.com/drive/folders/1tZUcXDBeOibC6jcMCtgRRz67pzrAHeHL) dataset. We generated 11k image latent code for experiments. (The file `latent_11k.npy` is saved on [Drive](https://drive.google.com/file/d/1wkTijbLQ3x5WETYejxqNDZmh4LlJISGs/view?usp=sharing))
+
+### How to use
+
+To generate the latent code for your dataset, use `notebooks/Generate_latent_code.ipynb` as a reference.
+
+To test the results, use `notebooks/latent2image2latent_exps.ipynb` as a reference.
 
 ## Results
 

@@ -69,7 +69,7 @@ By default, we assume that all auxiliary models are downloaded and saved to the 
 ## Results
 
 <p align="center">
-<img src="Data/Example.png" width="800px"/>
-<img src="Data/identity.png" width="800px"/>
-<img src="Data/image_exp1.png" width="800px"/>
+<img src="Data/Example.png" width="500px"/>
+<img src="Data/identity.png" width="500px"/>
+<img src="Data/image_exp1.png" width="500px"/>
 </p>
